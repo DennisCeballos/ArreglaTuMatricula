@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arregla tu Matricula</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="script.js"></script>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form id="cursos-form">
+                <label for="inputCurso">Curso:</label>
+                <input type="text" id="inputCurso" name="inputCurso" required>
+
+                <label for="descripcionCurso">Datos:</label>
+                <textarea id="descripcionCurso" name="descripcionCurso" rows="3" required></textarea>
+                
+                <div class="color-input-group">    
+                    <label for="color">Color:</label>
+                    <div class="color-input-controls">
+                        <input type="color" id="colorCurso" name="colorCurso" style="padding: 0%;">
+                        <button type="button" id="random-color-button">RND</button>
+                    </div>
+                </div>
+                
+                <button type="submit">Add Curso</button>
+            </form>
+
+            <div id="cursos-list">
+                <!--Cursos que se van a listar dinamicamente-->
+            </div>
+        </div>
+        <div class="schedule-container">
+            <table id="schedule-table">
+            </table>
+        </div>
+    </div>
+</body>
+</html>

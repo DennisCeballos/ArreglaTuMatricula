@@ -1,0 +1,160 @@
+/* VARIABLES GLOBALES EN CSS */
+:root {
+    --colorBorde: #000000;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    height: 90vh;
+}
+
+.container {
+    display: flex;
+    background-color: #fff;
+    overflow: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 5%;
+    width: 90%;
+}
+
+.form-container {
+    width: 30%;
+    flex: 1;
+    background-color: #f9f9f9;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container form label {
+    margin-top: 10px;
+}
+
+.form-container form input, .form-container form textarea, .form-container form button, .color-input-group {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-container form textarea {
+    resize: vertical;
+}
+
+.color-input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.color-input-group label {
+    margin-top: 0 !important;
+}
+
+.color-input-controls input, .color-input-controls button {
+    margin-left: 5px;
+}
+
+.form-container form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.schedule-container {
+    flex: 2;
+    padding: 10px;
+    width: 70%;
+    font-size: small;
+}
+
+#schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+#schedule-table tbody tr {
+    border: none;
+}
+
+#schedule-table th,
+#schedule-table td {
+    text-align: center;
+    padding: 3px;
+    width: 100%; /* 7 days + 1 header column */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid #ddd;
+}
+    
+#schedule-table th {
+    background-color: #f2f2f2;
+    border: 1px solid var(--colorBorde);
+}
+
+#schedule-table .bottom-line{
+    border-bottom: 1px solid var(--colorBorde);
+}
+
+#schedule-table .right-line {
+    border-right: 1px solid var(--colorBorde);
+}
+
+#schedule-table .time-cell {
+    border: 1px solid var(--colorBorde);
+}
+
+
+.schedule-cell {
+    /* used in JavaScript */
+}
+
+
+#cursos-list {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.curso-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.curso-name {
+    flex-grow: 1;
+}
+
+.curso-color {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.delete-button {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.hidden {
+    opacity: 0.4;
+}
+
